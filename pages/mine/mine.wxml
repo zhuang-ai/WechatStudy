@@ -1,0 +1,20 @@
+<view class="container">
+	<view class="my-list">
+		<navigator class="my-item" url="../users/mygames/mygames">
+			<image src="../../images/icon_24.png" mode="aspectFit"></image>
+			<text>已安装</text>
+		</navigator>
+			<navigator class="my-item" url="../users/mygames/mygames">
+			<image src="../../images/icon_26.png" mode="aspectFit"></image>
+			<text>可更新</text>
+		</navigator>
+			<navigator class="my-item" url="../users/mygames/mygames">
+			<image src="../../images/icon_28.png" mode="aspectFit"></image>
+			<text>我玩过的</text>
+		</navigator>
+			<navigator class="my-item" url="../users/mygames/mygames">
+			<image src="../../images/icon_30.png" mode="aspectFit"></image>
+			<text>预约</text>
+		</navigator>
+	</view>
+</view>

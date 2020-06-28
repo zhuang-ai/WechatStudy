@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class="banner" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="this.index">
+   <swiper-item>
+    <image src="{{item}}" class="banner-image"/>
+   </swiper-item>
+  </block>
+ </swiper>
+ <view>
+ </view>
+ <view class="menu">
+  <navigator class="menu-item" wx:for="{{menu}}" wx:key="{{item.url}}" url="../{{item.url}}/{{item.url}}">
+    <image src="{{item.icon}}"></image>
+    <text>{{item.text}}</text>
+  </navigator>
+</view>
+</view>

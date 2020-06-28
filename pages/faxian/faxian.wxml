@@ -1,0 +1,24 @@
+<view class="container">
+	<view class="filter-flex">
+		<view class="filter-tab sort-tab">
+			<text bindtap="setSortBy" data-sortindex="{{index}}" data-sortid="{{item.id}}" class="{{sortindex==index?'active':''}}" wx:for="{{sort}}" wx:key="{{item.id}}">{{item.title}}</text>
+		</view>
+	</view>
+	<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+		<view class="tuijian-list">
+			<navigator class="tuijian-item" wx:for="{{gamelist}}" wx:key="{{item.id}}" url="../details/gdetail/gdetail?id={{item.id}}&name={{item.name}}">
+				<view class="tuijian-item-img">
+					<image src="{{item.imgurl}}" mode="aspectFill"></image>
+					<text class="hover{{index}}" data-status="{{item.status}}">{{item.status}}</text>
+				</view>
+				<view class="tuijian-item-text">
+					<view class="tuijian-item-title">{{item.name}}</view>
+					<view class="tuijian-item-info game-item-info">
+                        <text class="icon-xinxi">{{item.coments}}人想玩</text>
+					</view>
+				</view>
+			</navigator>
+		</view>
+		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
+	</scroll-view>
+</view>

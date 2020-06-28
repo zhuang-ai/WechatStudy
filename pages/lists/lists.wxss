@@ -1,0 +1,97 @@
+/* pages/lists/lists.wxss */
+.filter-sort{
+	display: block;
+	background: #fff;
+}
+.filter-sort view{
+	flex: 1;
+	line-height: 80rpx;
+	text-indent: 60rpx;
+	max-height: 432rpx;
+	overflow-y: auto;
+	border-bottom: 1rpx solid #e8e8e8;
+}
+.filter-sort view.active{
+	color: #14b9c8;
+}
+.filter-multiple{
+	flex-direction: column;
+}
+.filter-multiple .group{
+	max-height: 700rpx;
+	overflow: auto;
+}
+.filter-tags{
+	padding: 20rpx;
+}
+.filter-tags text{
+	padding: 20rpx 26rpx;
+	border: 1rpx solid #ddd;
+	display: inline-block;
+	line-height: 1;
+	color: #666;
+	font-size: 28rpx;
+	border-radius: 4rpx;
+	margin: 10rpx;
+	white-space: nowrap;
+}
+.filter-tags text.active{
+	background: #14b9c8;
+	color: #fff;
+	border-color: #14b9c8;
+}
+.filter-btns{
+	display: flex;
+	padding: 20rpx;
+	border-top: 1rpx solid #ddd;
+	margin-top: -1rpx;
+}
+.filter-btns button{
+	margin: 0 10rpx;
+	line-height: 80rpx;
+}
+.Game-item{
+	padding: 20rpx;
+	border-bottom: 1rpx solid #e8e8e8;
+}
+.Game-item-img{
+	width: 100%;
+	height: 360rpx;
+	overflow: hidden;
+	position: relative;
+}
+.Game-item-img text{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #07b5e0;
+	color: #fff;
+	font-size: 32rpx;
+	padding: 6rpx 20rpx;
+}
+.Game-item-img image{
+	width: 100%;
+}
+.Game-item-title{
+	font-size: 38rpx;
+	color: #000;
+}
+.Game-item-info{
+	display: flex;
+}
+.Game-item-info text{
+	flex: 1;
+}
+.Game-item-tags:not(:empty){
+	margin-top: 10rpx;
+}
+.Game-item-tags text{
+	padding: 6rpx 16rpx;
+	border: 1rpx solid #14b9c8;
+	line-height: 1;
+	color: #14b9c8;
+	font-size: 28rpx;
+	border-radius: 4rpx;
+	margin-right: 10rpx;
+	white-space: nowrap;
+}
